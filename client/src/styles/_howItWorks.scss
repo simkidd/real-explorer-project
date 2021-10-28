@@ -1,0 +1,125 @@
+.how__works{
+    margin-top: 5rem;
+    .how__container{
+        padding: 5rem 9rem;
+        .title{
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+        .subtitle{
+            text-align: center;
+            font-weight: bold;
+            font-size: 2rem;
+            color: #3b3a40;
+        }
+        .step__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem;
+            position: relative;
+            &::before{
+                        position: absolute;
+                        content: '';
+                        height: 1px;
+                        width: 16rem;
+                        background: grey;
+                        left: 1rem;
+                        top: 25px;
+                    }
+            .step{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+                .step__icon{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 8px 2px rgba(99,99,99,0.2);
+                    background: #fff;
+                    &.active{
+                        background: #215b69;
+                        color: #fff;
+                    }
+                    &:hover{
+                        background: #215b69;
+                        color: #fff;
+                        svg{
+                            color: #fff;
+                        }
+
+                    }
+                    svg{
+                        color:#555;
+                    }
+                }
+                p{
+                    color:#555;
+                    margin: 0.8rem 0;
+                    font-weight: bold;
+                }
+            }
+        }
+        .step__card{
+            background: pink;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .inner__card{
+                padding: 0.5rem;
+                .inner__cardWrap{
+                    background: #fff;
+                    border-radius: 15px;
+                    padding: 2.5rem;
+                    width: 20rem;
+                    h2{
+                        color: #3b3a40;
+                        margin-bottom: 1.5rem;
+                    }
+                    .desc{
+                        color: #555;
+                        margin-bottom: 4rem;
+                        line-height: 1.6;
+                        width: 17rem;
+                    }
+                    .inner__wrapBottom{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        p{
+                            font-size: 14px;
+                            color: #555;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            span{
+                                color: grey;
+                                border: 1px solid #bebebe;
+                                padding: 5px;
+                                border-radius: 8px;
+                                margin-right: 15px;
+                            }
+                        }
+                        button{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #00d095;
+                            font-weight: bold;
+                            font-size: 14px;
+                            svg{
+                                font-size: 16px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,156 @@
+.advantages{
+    .adv__container{
+        padding: 0 3rem;
+        .adv__containerInner{
+            background: #348193;
+            padding: 5rem 6rem;
+            border-radius: 40px;
+            position: relative;
+            overflow: hidden;
+            .bg-lines{
+                position: absolute;
+                mix-blend-mode: soft-light;
+                opacity: 0.5;
+                left: -2rem;
+                bottom: -14rem;
+            }
+            .title{
+                color: #fff;
+                text-align: center;
+                margin-bottom: 1.2rem;
+                position: relative;
+            }
+            .subtitle{
+                color: #fff;
+                text-align: center;
+                font-size: 2rem;
+                position: relative;
+            }
+            .card__inner{
+                background: #fff;
+                margin: 3rem 0;
+                border-radius: 30px;
+                position: relative;
+                .card__innerWrap{
+                    padding: 3.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .inner__left{
+                        text-align: right;
+                        padding: 0 3rem;
+                        padding-bottom: 1rem;
+                        position: relative;
+                        border-right: 1px solid #bebebe;
+                        &::after{
+                            content: 'VS';
+                            position: absolute;
+                            padding: 0.6rem;
+                            border: 1px solid #bebebe;
+                            border-radius: 10px;
+                            color: #bebebe;
+                            right: -1.25rem;
+                            top: -0.5rem;
+                            background: #fff;
+                            font-weight: bold;
+                        }
+                        h3{
+                            margin-bottom: 2rem;
+                            letter-spacing: 0.5px;
+                            padding-right: 2rem;
+                        }
+                        ul{
+                            li{
+                                list-style: none;
+                                position: relative;
+                                padding-right: 2rem;
+                                letter-spacing: 0.5px;
+                                color: grey;
+                                &:not(:last-child){
+                                    margin-bottom: 2rem;
+                                }
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    right: 0;
+                                    top: 2px;
+                                    height: 12px;
+                                    border: 2px solid grey;
+                                    border-width: 0 2px 2px 0;
+                                    transform: rotate(45deg);
+                                }
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    right: 0;
+                                    top: 2px;
+                                    height: 12px;
+                                    border: 2px solid grey;
+                                    border-width: 0 2px 2px 0;
+                                    transform: rotate(-45deg);
+                                }
+                            }
+                        }
+                    }
+                    .inner__right{
+                        padding: 0 3rem;
+                        padding-bottom: 1rem;
+                        h3{
+                            margin-bottom: 2rem;
+                            letter-spacing: 0.5px;
+                            padding-left: 2rem;
+                            span{
+                                color: #2fda70;
+                            }
+                        }
+                        ul{
+                            li{
+                                list-style: none;
+                                position: relative;
+                                padding-left: 2.2rem;
+                                letter-spacing: 0.5px;
+                                color: grey;
+                                &:not(:last-child){
+                                    margin-bottom: 2rem;
+                                }
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    left: 2px;
+                                    top: 1px;
+                                    width: 7px;
+                                    height: 12px;
+                                    border: solid #2fda70;
+                                    border-width: 0 2px 2px 0;
+                                    transform: rotate(45deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .adv__bottom{
+                position: relative;
+                h1{
+                    color: #fff;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 3.2rem;
+                }
+                h3{
+                    text-align: center;
+                    margin-top: 1.5rem;
+                    color: #fff;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                }
+                p{
+                    text-align: center;
+                    margin-top: 1.5rem;
+                    color: #fff;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
