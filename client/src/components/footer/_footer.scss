@@ -1,0 +1,109 @@
+.footer{
+    border-top: 1px solid #ececec;
+    .foot__container{
+        padding: 5rem 9rem 2.5rem;
+        .foot__top{
+            display: flex;
+            justify-content: space-between;
+            .foot__column{
+                .foot__row{
+                    h3{
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-bottom: 1.3rem;
+                        color: grey;
+                    }
+                    ul{
+                        li{
+                            list-style: none;
+                            font-size: 14px;
+                            margin-bottom: 3rem;
+                            &:not(:last-child){
+                                margin-bottom: 0.9rem;
+                            }
+                            a{
+                                color: grey;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    .store{
+                        li{
+                            list-style: none;
+                            img{
+                                width: 9rem;
+                            }
+                        }
+                    }
+                    .foot__socials{
+                        li{
+                            display: inline;
+                            list-style: none;
+                            justify-content: space-between;
+                            &:not(:last-child){
+                                margin-right: 1.2rem;
+                            }
+                            img{
+                                width: 1.6rem;
+                                &:hover{
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .foot__bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3rem;
+            ul{
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    color: grey;
+                    &:not(:last-child){
+                        margin-right: 3.5rem;
+                    }
+                    a{
+                        color: grey;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .foot__lang{
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
+                p{
+                    margin-right: 0.5rem;
+                }
+                .lang__wrap{
+                    display: flex;
+                    border: 1px solid #bebebe;
+                    align-items: center;
+                    select{
+                        padding: 0.3rem;
+                        outline: none;
+                        cursor: pointer;
+                        font-size: 12px;
+                        appearance: none;
+                        border: none;
+                    }
+                    svg{
+                        color: grey;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -34,7 +34,7 @@ const Advantages = () => {
                     <div className="adv__bottom">
                         <h1>485,091+</h1>
                         <h3>Home available</h3>
-                        <p>Every 60 seconds a homeowner requests an offer from oval</p>
+                        <p>Every 60 seconds a home owner requests an offer from oval</p>
                     </div>
                 </div>
             </div>

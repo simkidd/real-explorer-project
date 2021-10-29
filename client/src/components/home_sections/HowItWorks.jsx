@@ -35,6 +35,9 @@ const HowItWorks = () => {
                     </div>
                 </div>
                 <div className="step__card">
+                        <div className="inner__img">
+                            <img src="/ui-ux/assets/homepage/Bitmap.png" alt="" />
+                        </div>
                     <div className="inner__card">
                         <div className="inner__cardWrap">
                             <h2>Find a home just<br /> right for you</h2>
