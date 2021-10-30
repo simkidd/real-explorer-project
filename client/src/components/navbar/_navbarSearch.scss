@@ -1,0 +1,117 @@
+.navbar__search{
+    background: #fff;
+    box-shadow: 0px 1px 0px rgba(17,17,26,0.1);
+    border-bottom: 1px solid #f2f2f2;
+    .navbar__searchContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        .nav__brand{
+            width: 8rem;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        form{
+            .search__wrap{
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                background: #f1f1f1;
+                width: 340px;
+                padding: 0.3rem;
+                border-radius: 10px;
+                margin-right: 2rem;
+                input{
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    background: transparent;
+                    font-size: 14px;
+                    padding: 0 0.6rem;
+                }
+                .search__icon{
+                    background: #3b3a40;
+                    padding: 0.5rem 0.8rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 6px;
+                    opacity: 0.9;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .nav__left{
+            display: inline;
+            li{
+                display: inline-block;
+                font-weight: bold;
+                text-align: center;
+                margin-right: 4rem;
+                &:not(:last-child){
+                    margin-right: 2rem;
+                }
+                .nav-link{
+                    color: #64626a;
+                    position: relative;
+                    padding: 0.25rem 0;
+                    &:hover{
+                        color: #348193;
+                    }
+                    &:hover::before{
+                        content: '';
+                        position: absolute;
+                        width: 2rem;
+                        height: 1.2px;
+                        background:#348193;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+        .nav__right{
+            display: inline;
+            li{
+                display: inline-block;
+                font-weight: bold;
+                text-align: center;
+                &:not(:last-child){
+                    margin-right: 2rem;
+                }
+                .nav-link{
+                    color: #64626a;
+                    position: relative;
+                    padding: 0.25rem 0;
+                    &:hover{
+                        color: #348193;
+                    }
+                    &:hover::before{
+                        content: '';
+                        position: absolute;
+                        width: 2rem;
+                        height: 1.2px;
+                        background:#348193;
+                        bottom: 0;
+                    }
+                }
+                .sign-up{
+                    background: #348193;
+                    color: #fff;
+                    padding: 0.6rem 1rem;
+                    border-radius: 50px;
+                    border: 1px solid #348193;
+                    &:hover{
+                        background: transparent;
+                        color: #348193;
+                        border: 1px solid #348193;
+                    }
+                }
+            }
+        }
+    }
+}
