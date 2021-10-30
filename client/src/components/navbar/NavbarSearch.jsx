@@ -7,7 +7,7 @@ const NavbarSearch = () => {
         <div className='navbar__search'>
             <div className="navbar__searchContainer">
                 <div className="nav__brand">
-                    <Link to='/'>
+                    <Link to='#'>
                         <img src="/ui-ux/assets/logo.svg" alt="" />
                     </Link>
                 </div>
@@ -20,16 +20,16 @@ const NavbarSearch = () => {
                     </div>
                 </form>
                 <ul className='nav__left'>
-                    <li><Link to='/' className='nav-link'>Buy</Link></li>
-                    <li><Link to='/' className='nav-link'>Rent</Link></li>
+                    <li><Link to='#' className='nav-link'>Buy</Link></li>
+                    <li><Link to='#' className='nav-link'>Rent</Link></li>
                     <li><Link to='/' className='nav-link'>Sell</Link></li>
-                    <li><Link to='/' className='nav-link'>Home Loans</Link></li>
-                    <li><Link to='/' className='nav-link'> Save to Rent/Buy</Link></li>
+                    <li><Link to='#' className='nav-link'>Home Loans</Link></li>
+                    <li><Link to='#' className='nav-link'> Save to Rent/Buy</Link></li>
                 </ul>
                 <ul className='nav__right'>
-                    <li><Link to='/' className='nav-link'>Advertise</Link></li>
-                    <li><Link to='/' className='nav-link'>Help</Link></li>
-                    <li><Link to='/' className='sign-up'>Sign Up</Link></li>
+                    <li><Link to='#' className='nav-link'>Advertise</Link></li>
+                    <li><Link to='#' className='nav-link'>Help</Link></li>
+                    <li><Link to='#' className='sign-up'>Sign Up</Link></li>
                 </ul>
             </div>
         </div>

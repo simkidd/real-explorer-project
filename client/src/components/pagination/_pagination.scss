@@ -1,0 +1,37 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .page{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border: 1px solid #cac9c9;
+        border-radius: 8px;
+        overflow: hidden;
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+        a{
+            font-size: 14px;
+            color: #555;
+            padding: 1rem;
+            &.active{
+                background: #348193;
+                color: #fff;
+                border: 1px solid #348193;
+            }
+            &:hover{
+                background: #348193;
+                color: #fff;
+                border: 1px solid #348193;
+            }
+            svg{
+                font-size: 11px !important;
+            }
+
+        }
+    }
+}
