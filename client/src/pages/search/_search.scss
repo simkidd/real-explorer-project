@@ -105,7 +105,58 @@
                         }
                     }
                 }
-                .option__right{}
+                .option__right{
+                    .search__map{
+                        background: #fff;
+                        border-radius: 50px;
+                        padding: 0.6rem 1rem;
+                        display: flex;
+                        input{
+                            display: none;
+
+                            &:checked + label{
+                                color: #348193;
+                            }
+                            &:checked + label:after{
+                                left: calc(100% - 1.5px);
+                                transform: translateX(-100%);
+                                background: #348193;
+                            }
+                        }
+                        label{
+                            cursor: pointer;
+                            width: 1.6rem;
+                            height: 0.9rem;
+                            background: #f1f1f1;
+                            border: 1px solid #f2f2f2;
+                            display: block;
+                            border-radius: 100px;
+                            position: relative;
+                            font-weight: bold;
+                            text-indent: -9999px;
+                            &:after{
+                                content: '';
+                                position: absolute;
+                                top: 1.5px;
+                                left: 1.5px;
+                                width: 0.7rem;
+                                height: 0.7rem;
+                                background: #fff;
+                                border-radius: 90px;
+                                transition: all 0.3s ease;
+                            }
+                            &:active:after{
+                                width: 0.9rem;
+                            }
+                        }
+                        span{
+                            margin-left: 1rem;
+                            font-size: 14px;
+                            color: #348193;
+                            font-weight: bold;
+                        }
+                    }
+                }
             }
         }
         .search__body{
@@ -130,10 +181,44 @@
                             height: 160px;
                             border-radius: 20px;
                             overflow: hidden;
+                            position: relative;
+                            &:hover{
+                                img{
+                                    filter: brightness(80%);
+                                }
+                            }
                             img{
                                 width: 100%;
                                 height: 100%;
                                 object-fit: cover;
+                                filter: brightness(90%);
+                            }
+                            span{
+                                position: absolute;
+                                top: 0.8rem;
+                                left: 0.8rem;
+                                background: #fff;
+                                text-transform: uppercase;
+                                padding: 0.4rem 0.6rem;
+                                border-radius: 8px;
+                                font-size: 11px;
+                                font-weight: bold;
+                                &.new{
+                                    color: #a904be;
+                                }
+                                &.sale{
+                                    color: #f82ca3;
+                                }
+                                &.recommended{
+                                    color: #0c95f0;
+                                }
+                            }
+                            svg{
+                                position: absolute;
+                                top: 0.8rem;
+                                right: 0.8rem;
+                                color: #fff;
+                                font-weight: bold;
                             }
                         }
                         .card__body{
@@ -165,7 +250,6 @@
                             }
                         }
                     }
-
                 }
                 .search__pagination{
                     margin: 5.5rem 0 3rem;
@@ -173,8 +257,15 @@
             }
             .body__right{
                 .search__map{
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 795px;
+                    overflow: hidden;
+                    border: 1px solid #f2f2f2;
+
                     img{
                         width: 100%;
+                        height: 100%;
                     }
                 }
             }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './_search.scss';
 import NavbarSearch from '../../components/navbar/NavbarSearch';
-import { KeyboardArrowDown, NotificationsNoneOutlined, Close, Hotel, Bathtub, AspectRatio } from '@material-ui/icons'
+import { KeyboardArrowDown, NotificationsNoneOutlined, Close, Hotel, Bathtub, AspectRatio, FavoriteBorder } from '@material-ui/icons'
 import Footer from '../../components/footer/Footer';
 import Pagination from '../../components/pagination/Pagination';
 
@@ -62,8 +62,9 @@ const Search = () => {
                         </div>
                         <div className="option__right">
                             <div className='search__map'>
-                                <input type="checkbox" name="" id="" />
-                                <label htmlFor="">Show Maps</label>
+                                <input type="checkbox" name="" id="show-map" defaultChecked />
+                                <label htmlFor="show-map">Show Maps</label>
+                                <span>Show Maps</span>
                             </div>
                         </div>
                     </div>
@@ -74,6 +75,10 @@ const Search = () => {
                             <div className="search__card">
                                 <div className="card__img">
                                     <img src="/ui-ux/assets/search/Img.png" alt="" />
+                                    <span className="new">
+                                        New
+                                    </span>
+                                    <FavoriteBorder />
                                 </div>
                                 <div className="card__body">
                                     <h2 className='card__price'>$24,000,000</h2>
@@ -91,6 +96,10 @@ const Search = () => {
                             <div className="search__card">
                                 <div className="card__img">
                                     <img src="/ui-ux/assets/search/Img(1).png" alt="" />
+                                    <span className="sale">
+                                        Sale
+                                    </span>
+                                    <FavoriteBorder />
                                 </div>
                                 <div className="card__body">
                                     <h2 className='card__price'>$989,000</h2>
@@ -108,6 +117,10 @@ const Search = () => {
                             <div className="search__card">
                                 <div className="card__img">
                                     <img src="/ui-ux/assets/search/Img(2).png" alt="" />
+                                    <span className="recommended">
+                                        Recommended
+                                    </span>
+                                    <FavoriteBorder />
                                 </div>
                                 <div className="card__body">
                                     <h2 className='card__price'>$896,000</h2>
@@ -125,6 +138,10 @@ const Search = () => {
                             <div className="search__card">
                                 <div className="card__img">
                                     <img src="/ui-ux/assets/search/Img.png" alt="" />
+                                    <span className="sale">
+                                        Sale
+                                    </span>
+                                    <FavoriteBorder />
                                 </div>
                                 <div className="card__body">
                                     <h2 className='card__price'>$1,095,000</h2>
@@ -142,6 +159,10 @@ const Search = () => {
                             <div className="search__card">
                                 <div className="card__img">
                                     <img src="/ui-ux/assets/search/Img(1).png" alt="" />
+                                    <span className="recommended">
+                                        Recommended
+                                    </span>
+                                    <FavoriteBorder />
                                 </div>
                                 <div className="card__body">
                                     <h2 className='card__price'>$1,495,000</h2>
@@ -159,6 +180,10 @@ const Search = () => {
                             <div className="search__card">
                                 <div className="card__img">
                                     <img src="/ui-ux/assets/search/Img(2).png" alt="" />
+                                    <span className="new">
+                                        New
+                                    </span>
+                                    <FavoriteBorder />
                                 </div>
                                 <div className="card__body">
                                     <h2 className='card__price'>$24,000,000</h2>
@@ -176,6 +201,10 @@ const Search = () => {
                             <div className="search__card">
                                 <div className="card__img">
                                     <img src="/ui-ux/assets/search/Img.png" alt="" />
+                                    <span className="recommended">
+                                        Recommended
+                                    </span>
+                                    <FavoriteBorder />
                                 </div>
                                 <div className="card__body">
                                     <h2 className='card__price'>$24,000,000</h2>
@@ -193,6 +222,10 @@ const Search = () => {
                             <div className="search__card">
                                 <div className="card__img">
                                     <img src="/ui-ux/assets/search/Img(1).png" alt="" />
+                                    <span className="new">
+                                        New
+                                    </span>
+                                    <FavoriteBorder />
                                 </div>
                                 <div className="card__body">
                                     <h2 className='card__price'>$24,000,000</h2>
@@ -210,6 +243,10 @@ const Search = () => {
                             <div className="search__card">
                                 <div className="card__img">
                                     <img src="/ui-ux/assets/search/Img(2).png" alt="" />
+                                    <span className="sale">
+                                        Sale
+                                    </span>
+                                    <FavoriteBorder />
                                 </div>
                                 <div className="card__body">
                                     <h2 className='card__price'>$24,000,000</h2>
